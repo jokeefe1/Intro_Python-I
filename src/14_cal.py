@@ -22,3 +22,10 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+# TODO: finish this excersise
+def my_calendar():
+  d = input('mm/yyyy').split(',')
+
+
+my_calendar()
