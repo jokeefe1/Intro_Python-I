@@ -23,9 +23,19 @@ import sys
 import calendar
 from datetime import datetime
 
-# TODO: finish this excersise
-def my_calendar():
-  d = input('mm/yyyy').split(',')
+# TODO: finish this
+def my_calendar(*args):
+  d = datetime.now()
+  y = d.year
+  m = d.month
 
+  if len(args) == 0:
+    calendar.prmonth(y, m)
+  if len(args) == 1:
+    calendar.prmonth(y, args[0])
+  elif len(args) == 2:
+    calendar.prmonth(args[1], args[0])
+  else:
+    print('Must only enter numbers and use format "mm, yyyy"')
 
-my_calendar()
+my_calendar(5)
