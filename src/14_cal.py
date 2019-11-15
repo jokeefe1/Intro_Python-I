@@ -38,4 +38,4 @@ def my_calendar(*args):
   else:
     print('Must only enter numbers and use format "mm, yyyy"')
 
-my_calendar(5)
+my_calendar(3, 2017)

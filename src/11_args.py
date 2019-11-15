@@ -26,7 +26,7 @@ a = [7, 6, 5, 4]
 
 # :TODO finish up this exercise
 # What thing do you have to add to make this work?
-# print(f2(a))    # Should print 22
+print(f2(*a))    # Should print 22
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the
@@ -35,7 +35,7 @@ a = [7, 6, 5, 4]
 # YOUR CODE HERE
 def f3(*args):
     if len(args) == 1:
-        return args + 1
+        return sum(args) + 1
     else:
         return sum(args)
 print(f3(1, 2))  # Should print 3
@@ -51,7 +51,9 @@ print(f3(8))     # Should print 9
 # Google "python keyword arguments".
 
 # YOUR CODE HERE
-
+def f4(**args):
+    for k, v in args.items():
+        print(f'key: {k}, value: {v}')
 # Should print
 # key: a, value: 12
 # key: b, value: 30
@@ -69,4 +71,4 @@ d = {
 }
 
 # What thing do you have to add to make this work?
-f4(d)
+f4(**d)
