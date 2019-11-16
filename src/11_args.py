@@ -24,7 +24,6 @@ print(f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
 
 a = [7, 6, 5, 4]
 
-# :TODO finish up this exercise
 # What thing do you have to add to make this work?
 print(f2(*a))    # Should print 22
 

@@ -23,7 +23,6 @@ import sys
 import calendar
 from datetime import datetime
 
-# TODO: finish this
 def my_calendar(*args):
   d = datetime.now()
   y = d.year
